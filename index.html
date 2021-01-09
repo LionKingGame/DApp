@@ -1,0 +1,10 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        String.prototype.startWith = function (a) { return new RegExp("^" + a).test(this) }; var lan = (navigator.browserLanguage || navigator.language).toLowerCase(), realLan = "en"; if ("zh" == lan || "zh-cn" == lan) realLan = "zh"; else if (lan.startWith("zh-")) realLan = "zh-"; else for (var l_IE = ["ja", "fr", "es", "th", "ar", "ru", "pt", "de", "it", "el", "nl", "pl", "vi"], i = 0; i < l_IE.Length; i++)if (lan == l_IE || lan.startWith(l_IE[i] + "-")) { realLan = l_IE[i]; break } window.location = "" + realLan + window.location.search;
+    </script>
+</head>
+<body >
+</body>
+</html>
